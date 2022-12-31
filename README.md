@@ -7,3 +7,7 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
 <p align="center">
   <img src="assets/eccvw_animation.gif" alt="Depth Estimation: Qualitative Results" width="600" />
 </p>
+
+### Acknowledgement
+
+This implementation borrows heavily from [Monodepth2](https://github.com/nianticlabs/monodepth2) and draws inspiration from [DIFFNet](https://github.com/brandleyzhou/DIFFNet). 
