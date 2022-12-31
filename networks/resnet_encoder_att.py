@@ -1,9 +1,3 @@
-# Copyright Niantic 2019. Patent Pending. All rights reserved.
-#
-# This software is licensed under the terms of the Monodepth2 licence
-# which allows for non-commercial use only, the full terms of which are made
-# available in the LICENSE file.
-
 from __future__ import absolute_import, division, print_function
 
 import numpy as np
@@ -16,9 +10,7 @@ from torch.hub import load_state_dict_from_url
 
 
 class ResNetMultiImageInput(models.ResNet):
-    """Constructs a resnet model with varying number of input images.
-    Adapted from https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
-    """
+    
     def __init__(self, block, layers, num_classes=1000, num_input_images=1):
         super(ResNetMultiImageInput, self).__init__(block, layers)
         self.inplanes = 64
@@ -41,12 +33,7 @@ class ResNetMultiImageInput(models.ResNet):
 
 
 def resnet_multiimage_input(num_layers, pretrained=False, num_input_images=1):
-    """Constructs a ResNet model.
-    Args:
-        num_layers (int): Number of resnet layers. Must be 18 or 50
-        pretrained (bool): If True, returns a model pre-trained on ImageNet
-        num_input_images (int): Number of frames stacked as input
-    """
+    
     assert num_layers in [18, 50], "Can only run with 18 or 50 layer resnet"
     blocks = {18: [2, 2, 2, 2], 50: [3, 4, 6, 3]}[num_layers]
     block_type = {18: models.resnet.BasicBlock, 50: models.resnet.Bottleneck}[num_layers]
@@ -61,8 +48,7 @@ def resnet_multiimage_input(num_layers, pretrained=False, num_input_images=1):
 
 
 class ResnetEncoder(nn.Module):
-    """Pytorch module for a resnet encoder
-    """
+    
     def __init__(self, num_layers, pretrained, num_input_images=1):
         super(ResnetEncoder, self).__init__()
 

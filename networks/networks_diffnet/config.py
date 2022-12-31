@@ -55,21 +55,7 @@ __C.MODEL.BN = 'pytorch-syncnorm'
 __C.MODEL.BNFUNC = torch.nn.BatchNorm2d
 
 def assert_and_infer_cfg(args, make_immutable=True, train_mode=True):
-    """Call this function in your script after you have finished setting all cfg
-    values that are necessary (e.g., merging a config from a file, merging
-    command line config options, etc.). By default, this function will also
-    mark the global cfg as immutable to prevent changing the global cfg settings
-    during script execution (which can lead to hard to debug errors or code
-    that's harder to understand than is necessary).
-    """
-
-    #if hasattr(args, 'syncbn') and args.syncbn:
-    #    __C.MODEL.BN = 'pytorch-syncnorm'
-    #    __C.MODEL.BNFUNC = torch.nn.SyncBatchNorm
-    #    print('Using pytorch sync batch norm')
-    #else:
-    #    __C.MODEL.BNFUNC = torch.nn.BatchNorm2d
-    #    print('Using regular batch norm')
+   
     
     __C.MODEL.BNFUNC = torch.nn.BatchNorm2d
     

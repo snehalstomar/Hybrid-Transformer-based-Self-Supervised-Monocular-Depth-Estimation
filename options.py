@@ -3,7 +3,7 @@ from __future__ import absolute_import, division, print_function
 import os
 import argparse
 
-file_dir = os.path.dirname(__file__)  # the directory that options.py resides in
+file_dir = os.path.dirname(__file__)  
 
 
 class MonodepthOptions:

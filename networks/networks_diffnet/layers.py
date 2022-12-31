@@ -1,8 +1,3 @@
-# Copyright Niantic 2019. Patent Pending. All rights reserved.
-#
-# This software is licensed under the terms of the Monodepth2 licence
-# which allows for non-commercial use only, the full terms of which are made
-# available in the LICENSE file.
 
 from __future__ import absolute_import, division, print_function
 
@@ -14,10 +9,7 @@ import torch.nn.functional as F
 
 
 def disp_to_depth(disp, min_depth, max_depth):
-    """Convert network's sigmoid output into depth prediction
-    The formula for this conversion is given in the 'additional considerations'
-    section of the paper.
-    """
+    
     min_disp = 1 / max_depth
     max_disp = 1 / min_depth
     scaled_disp = min_disp + (max_disp - min_disp) * disp
@@ -26,15 +18,10 @@ def disp_to_depth(disp, min_depth, max_depth):
 
 
 def transformation_from_parameters(axisangle, translation, invert=False):
-    """Convert the  pose_decoder network's (axisangle, translation) output into a 4x4 matrix
-    """
-   
+    
     R = rot_from_axisangle(axisangle)
     t = translation.clone()
-    # translation[12 x 1 x 3]
-    # axisnagle[12 x 1 x 3]
-    # R [12 X 4 x 4]
-    # t [12 x 1 x3]
+    
 
     if invert:
         R = R.transpose(1, 2)
@@ -66,10 +53,7 @@ def get_translation_matrix(translation_vector):
 
 
 def rot_from_axisangle(vec):
-    """Convert an axisangle rotation into a 4x4 transformation matrix
-    (adapted from https://github.com/Wallacoloo/printipi)
-    Input 'vec' has to be Bx1x3
-    """
+    
     
     angle = torch.norm(vec, 2, 2, True)
     axis = vec / (angle + 1e-7)

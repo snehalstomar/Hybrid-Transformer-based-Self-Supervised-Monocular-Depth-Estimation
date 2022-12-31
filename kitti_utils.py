@@ -6,9 +6,7 @@ from collections import Counter
 
 
 def load_velodyne_points(filename):
-    """Load 3D point cloud from KITTI file format
-    (adapted from https://github.com/hunse/kitti)
-    """
+    
     points = np.fromfile(filename, dtype=np.float32).reshape(-1, 4)
     points[:, 3] = 1.0  # homogeneous
     return points
