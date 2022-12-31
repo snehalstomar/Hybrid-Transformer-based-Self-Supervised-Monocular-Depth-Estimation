@@ -12,7 +12,7 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
 If you use this code for your research, please cite our paper:
 ```
 @inproceedings{tomar2022hybrid,
-  title={Hybrid Transformer Based Feature Fusion for Self-Supervised Monocular Depth Estimation },
+  title={Hybrid Transformer Based Feature Fusion for Self-Supervised Monocular Depth Estimation},
   author={Tomar, Snehal Singh and Suin, Maitreya and Rajagopalan, A.N.},
   booktitle={Advances in Image Manipulation, European Conference on Computer Vision Workshops (ECCVW) 2022},
   year={2022}
@@ -21,4 +21,4 @@ If you use this code for your research, please cite our paper:
 
 ### Acknowledgement
 
-This implementation borrows heavily from [Monodepth2](https://github.com/nianticlabs/monodepth2) and draws inspiration from [DIFFNet](https://github.com/brandleyzhou/DIFFNet). 
+This implementation borrows heavily from [Monodepth2](https://github.com/nianticlabs/monodepth2), and draws inspiration from the [DIFFNet](https://github.com/brandleyzhou/DIFFNet). 
