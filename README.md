@@ -9,7 +9,7 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
 </p>
 
 ### Bibtex
-If you use this code for your research, please cite our paper:
+If you use this code, please cite our paper:
 ```
 @inproceedings{tomar2022hybrid,
   title={Hybrid Transformer Based Feature Fusion for Self-Supervised Monocular Depth Estimation},
