@@ -8,6 +8,17 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
   <img src="assets/eccvw_animation.gif" alt="Depth Estimation: Qualitative Results" width="600" />
 </p>
 
+### Bibtex
+If you use this code for your research, please cite our paper:
+```
+@inproceedings{tomar2022hybrid,
+  title={Hybrid Transformer Based Feature Fusion for Self-Supervised Monocular Depth Estimation },
+  author={Tomar, Snehal Singh and Suin, Maitreya and Rajagopalan, A.N.},
+  booktitle={Advances in Image Manipulation, European Conference on Computer Vision Workshops (ECCVW) 2022},
+  year={2022}
+}
+```
+
 ### Acknowledgement
 
 This implementation borrows heavily from [Monodepth2](https://github.com/nianticlabs/monodepth2) and draws inspiration from [DIFFNet](https://github.com/brandleyzhou/DIFFNet). 
