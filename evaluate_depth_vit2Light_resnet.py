@@ -13,14 +13,11 @@ from options import MonodepthOptions
 import datasets
 import networks
 
-cv2.setNumThreads(0)  # This speeds up evaluation 5x on our unix systems (OpenCV 3.3.1)
-
+cv2.setNumThreads(0)  
 
 splits_dir = os.path.join(os.path.dirname(__file__), "splits")
 
-# Models which were trained with stereo supervision were trained with a nominal
-# baseline of 0.1 units. The KITTI rig has a baseline of 54cm. Therefore,
-# to convert our stereo predictions to real-world scale we multiply our depths by 5.4.
+
 STEREO_SCALE_FACTOR = 5.4
 
 
