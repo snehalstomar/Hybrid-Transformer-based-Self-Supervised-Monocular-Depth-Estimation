@@ -8,6 +8,8 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
   <img src="assets/eccvw_animation.gif" alt="Depth Estimation: Qualitative Results" width="600" />
 </p>
 
+
+
 ### Bibtex
 If you use this code, please cite our paper:
 ```
@@ -18,6 +20,10 @@ If you use this code, please cite our paper:
   year={2022}
 }
 ```
+
+### License
+
+This code is for non-commercial use only. Please refer to our License file for more.
 
 ### Acknowledgement
 
