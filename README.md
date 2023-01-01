@@ -9,6 +9,11 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
 </p>
 
 
+## Setup
+
+Our setup for this project entailed the following:
+
+> CUDA 10.0, cuDNN 7.5.0, Python 3.6, Pytorch 0.4.1, Torchvision 0.2.1, OpenCV 3.3.1, and Ubuntu 20.04.
 
 ### Bibtex
 If you use this code, please cite our paper:
