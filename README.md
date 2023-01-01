@@ -5,7 +5,7 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
 > + Paper: [ECCVW 2022 arXiv preprint](https://arxiv.org/abs/2211.11066)
 
 <p align="center">
-  <img src="assets/eccvw_animation.gif" alt="Depth Estimation: Qualitative Results" width="600" />
+  <img src="assets/eccvw_animation.gif" alt="Depth Estimation: Qualitative Results" width="600"/>
 </p>
 
 
@@ -13,7 +13,12 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
 
 Our setup for this project entailed the following:
 
-> CUDA 10.0, cuDNN 7.5.0, Python 3.6, Pytorch 0.4.1, Torchvision 0.2.1, OpenCV 3.3.1, and Ubuntu 20.04.
+> + CUDA 10.0, cuDNN 7.5.0, Python 3.6, Pytorch 0.4.1, Torchvision 0.2.1, OpenCV 3.3.1, and Ubuntu 20.04.
+> + Upon cloning the repository, please place the [KITTI Dataset](https://www.cvlibs.net/datasets/kitti/) in "kitti_data/" before running any experiments.
+
+## Training
+
+
 
 ### Bibtex
 If you use this code, please cite our paper:
