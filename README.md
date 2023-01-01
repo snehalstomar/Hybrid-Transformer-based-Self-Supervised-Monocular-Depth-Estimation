@@ -5,7 +5,7 @@ Advances in Image Manipulation, European Conference on Computer Vision Workshops
 > + Paper: [ECCVW 2022 arXiv preprint](https://arxiv.org/abs/2211.11066)
 
 <p align="center">
-  <img src="assets/eccvw_animation.gif" alt="Depth Estimation: Qualitative Results" width="600"/>
+  <img src="assets/eccvw_animation.gif" alt="Depth Estimation: Qualitative Results" width="600" />
 </p>
 
 
@@ -35,7 +35,7 @@ To evaluate a particular model, run:
 > python evaluate_depth.py --load_weights_folder <path_to_model_weights> --eval_mono
 
 ### Bibtex
-If you use this code, please cite our paper:
+If you use this code, please cite our paper:	
 ```
 @inproceedings{tomar2022hybrid,
   title={Hybrid Transformer Based Feature Fusion for Self-Supervised Monocular Depth Estimation},
