@@ -18,7 +18,21 @@ Our setup for this project entailed the following:
 
 ## Training
 
+Please run:
 
+> python train_w_lrl_hrl.py --model_name <desired_model_name> --png
+
+The "--png" option may be omitted if the KITTI Dataset has been downloaded in ".jpg" file format. The model files will be saved at "model_under_trg/desired_model_name/" by default. 
+
+## Inference
+
+To generate predicted depth maps, run:
+
+> python export_gt_depth.py --data_path kitti_data --split eigen
+
+To evaluate a particular model, run:
+
+> python evaluate_depth.py --load_weights_folder <path_to_model_weights> --eval_mono
 
 ### Bibtex
 If you use this code, please cite our paper:
